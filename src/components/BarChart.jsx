@@ -20,6 +20,10 @@ const barChartOptions = {
     scales: {
         y: {
             beginAtZero: true,
+            title: {
+                display: true,
+                text: 'Sales'
+            }
         },
     },
 };

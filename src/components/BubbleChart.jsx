@@ -6,9 +6,10 @@ const BubbleChart = ({ data }) => {
         labels: data.months,
         datasets: [
             {
-                label: 'Sales, Expenses & Profits',
-                data: data.expenses.map((expense, index) => ({
-                    x: expense,
+                label: 'Sales, Profits & Expenses',
+                    // had to rearrange variables to match coding project requirements
+                data: data.months.map((exp, index) => ({
+                    x: data.expenses[index],
                     y: data.profits[index],
                     r: data.sales[index]/10
             })),
@@ -20,10 +21,23 @@ const BubbleChart = ({ data }) => {
     }
 
     const bubbleChartOptions = {
+        responsive: true,
         scales: {
             y: {
+                type: 'linear',
                 beginAtZero: false,
+                title: {
+                    display: true,
+                    text: 'Profits'
+                }
             },
+            x: {
+                type: 'linear',
+                title: {
+                    display: true,
+                    text: 'Expenses'
+                }
+            }
         },
     };
     

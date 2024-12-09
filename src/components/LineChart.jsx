@@ -17,9 +17,15 @@ const LineChart = ({ data }) => {
 
 
 const lineChartOptions = {
+    responsive: true,
     scales: {
+        
         y: {
             beginAtZero: true,
+                title: {
+                    display: true,
+                    text: 'Profits'
+                }
         },
     },
 };

@@ -20,8 +20,18 @@ const scatterChartOptions = {
     scales: {
         y: {
             beginAtZero: false,
-            ticks: {stepsize: 50}
+            ticks: {stepsize: 20},
+            title: {
+                display: true,
+                text: 'Profits'
+            }
         },
+        x: {
+            title: {
+                display: true,
+                text: 'Expenses'
+            }
+        }
     },
 };
 
