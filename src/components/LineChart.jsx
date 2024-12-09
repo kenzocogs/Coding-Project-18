@@ -29,4 +29,4 @@ return <ChartComponent type="line" data={lineChartData} options={lineChartOption
 
 };
 
-export default LineChart
+export default LineChart;

@@ -29,6 +29,6 @@ const BubbleChart = ({ data }) => {
     
     return <ChartComponent type="bubble" data={bubbleChartData} options={bubbleChartOptions}/> 
     
-
-
 }
+
+export default BubbleChart;

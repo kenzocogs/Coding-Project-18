@@ -29,4 +29,4 @@ return <ChartComponent type="bar" data={barChartData} options={barChartOptions}/
 
 };
 
-export default BarChart
+export default BarChart;
