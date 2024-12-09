@@ -18,6 +18,8 @@ function App() {
     .then((data) => setChartData(data));
   }, []);
 
+
+// displaying loading message if chart data is not loaded yet
   if (!chartData) {
     return <div>Loading...</div>
   };
@@ -34,4 +36,5 @@ function App() {
     );
   }
 
+// exporting rendered charts!
 export default App;
