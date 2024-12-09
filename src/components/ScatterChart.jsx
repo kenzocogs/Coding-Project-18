@@ -8,8 +8,8 @@ const ScatterChart = ({ data }) => {
             {
                 label: 'Expenses & Profits',
                 data: data.profits,
-                backgroundColor: 'rgba(75, 192, 192, .2)',
-                borderColor: 'rgba(75,192,192,1)',
+                backgroundColor: 'rgba(255, 89, 75, .2)',
+                borderColor: 'rgba(200 ,89,75,1)',
                 borderWidth: 1,
             },
         ]

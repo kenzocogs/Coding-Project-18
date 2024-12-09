@@ -8,8 +8,8 @@ const LineChart = ({ data }) => {
             {
                 label: 'Monthly Profits',
                 data: data.profits,
-                backgroundColor: 'rgba(75, 192, 192, .2)',
-                borderColor: 'rgba(75,192,192,1)',
+                backgroundColor: 'rgba(157, 245, 210, .2)',
+                borderColor: 'rgba(157,245,210,1)',
                 borderWidth: 1,
             },
         ]

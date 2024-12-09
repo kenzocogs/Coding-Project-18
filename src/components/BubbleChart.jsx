@@ -6,14 +6,14 @@ const BubbleChart = ({ data }) => {
         labels: data.months,
         datasets: [
             {
-                label: 'Monthly Sales',
+                label: 'Sales, Expenses & Profits',
                 data: data.expenses.map((expense, index) => ({
                     x: expense,
                     y: data.profits[index],
                     r: data.sales[index]/10
             })),
-                backgroundColor: 'rgba(75, 192, 192, .2)',
-                borderColor: 'rgba(75,192,192,1)',
+                backgroundColor: 'rgba(182, 157, 245, .2)',
+                borderColor: 'rgba(182, 157, 245,1)',
                 borderWidth: 1,
             },
         ]
