@@ -40,4 +40,5 @@ return <ChartComponent type="scatter" data={scatterChartData} options={scatterCh
 
 };
 
+// exporting for main app file
 export default ScatterChart;

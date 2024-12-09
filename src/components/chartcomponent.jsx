@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Chart from 'Chart.js/auto';
 
+// defining chart component
 const ChartComponent = ({ type, data, options }) => {
     const chartRef = useRef(null);
     const chartInstanceRef = useRef(null);
@@ -11,6 +12,7 @@ useEffect(() => {
             chartInstanceRef.current.destroy();
         };
 
+        // creating chart instance
     chartInstanceRef.current = new Chart (ctx, {
         type,
         data,
@@ -26,7 +28,9 @@ useEffect(() => {
 
     }, [type, data, options]);
 
+    // creating HTML element for chart
         return <canvas ref={chartRef}></canvas>;
 };
 
+// exporting for reuse in different types of charts
 export default ChartComponent; 

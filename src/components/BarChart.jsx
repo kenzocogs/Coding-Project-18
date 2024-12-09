@@ -28,9 +28,11 @@ const barChartOptions = {
     },
 };
 
+// using chart component with the above data
 return <ChartComponent type="bar" data={barChartData} options={barChartOptions}/> 
 
 
 };
 
+// exporting for main app file
 export default BarChart;

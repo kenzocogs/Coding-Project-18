@@ -8,7 +8,7 @@ const LineChart = ({ data }) => {
             {
                 label: 'Monthly Profits',
                 data: data.profits,
-                backgroundColor: 'rgba(157, 245, 210, .2)',
+                backgroundColor: 'rgba(157, 245, 210, .2)', // each chart will have different colors for variety
                 borderColor: 'rgba(157,245,210,1)',
                 borderWidth: 1,
             },
@@ -35,4 +35,5 @@ return <ChartComponent type="line" data={lineChartData} options={lineChartOption
 
 };
 
+// exporting for main app file
 export default LineChart;

@@ -23,6 +23,7 @@ const BubbleChart = ({ data }) => {
     const bubbleChartOptions = {
         responsive: true,
         scales: {
+            // adding titles for proper chart clarity
             y: {
                 type: 'linear',
                 beginAtZero: false,
@@ -45,4 +46,5 @@ const BubbleChart = ({ data }) => {
     
 }
 
+// exporting for main app file
 export default BubbleChart;
